@@ -1,8 +1,9 @@
-
-{% block title %}List of Staff{% endblock %}
+{% include 'school_roster_app/title.html' %}
+<h1>List of Staff</h1>
 
 {% block content %}
 {% for staff in all_staff %}
-    <li>{{ staff.name }} <a href="http://localhost:8000/index_staff/{{staff.employee_id}}">{{staff.employee_id}}</a></li>
+    <li>{{ staff.name }} <a class='link_color' href="http://localhost:8000/index_staff/{{staff.employee_id}}">{{staff.employee_id}}</a></li>
 {% endfor %}
+{% include 'school_roster_app/back-to-home.html' %}
 {% endblock %}

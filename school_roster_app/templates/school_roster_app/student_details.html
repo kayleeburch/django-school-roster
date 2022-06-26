@@ -1,7 +1,11 @@
-{% block title %}Student Details{% endblock %}
+{% include 'school_roster_app/title.html' %}
+
+<h1>Student Information</h1>
 
 {% block content %}
     <li>Name : {{ student.name }}</li>
     <li>Age : {{ student.age }}</li>
     <li>Role : {{ student.role }}</li>
+
+{% include 'school_roster_app/back-to-home.html' %}
 {% endblock %}

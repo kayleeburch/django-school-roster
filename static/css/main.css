@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(149, 228, 255);
+}
+
+h1 {
+   display: flex; 
+   color: #14626e;
+   font-family: Verdana, Tahoma, sans-serif;
+   outline-style: solid;
+   outline-color: black;
+   font-size: 3em;
+   justify-content: center;
+   
+}
+
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #14626e;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+    
+}
+
+li {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 0.5em 0.5em
+}
+
+.link_color {
+    color: #14626e;
+}
+
+.back-to-home {
+    display: block;
+    border: none;
+    width: 30%;
+    background-color: #14626e;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+}

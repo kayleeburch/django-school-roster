@@ -1,8 +1,9 @@
-
-{% block title %}List of Students{% endblock %}
+{% include 'school_roster_app/title.html' %}
+<h1>List of Students</h1>
 
 {% block content %}
 {% for student in all_students %}
-    <li>{{ student.name }} <a href="http://localhost:8000/index_students/{{student.school_id}}">{{student.school_id}}</a></li>
+    <li>{{ student.name }} <a class='link_color' href="http://localhost:8000/index_students/{{student.school_id}}">{{student.school_id}}</a></li>
 {% endfor %}
+{% include 'school_roster_app/back-to-home.html' %}
 {% endblock %}
