@@ -1,0 +1,8 @@
+
+{% block title %}List of Staff{% endblock %}
+
+{% block content %}
+{% for staff in all_staff %}
+    <li>{{ staff.name }} <a href="http://localhost:8000/index_staff/{{staff.employee_id}}">{{staff.employee_id}}</a></li>
+{% endfor %}
+{% endblock %}
